@@ -18,15 +18,34 @@ body {
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0), black);
   border-radius: 25px;
   font-family: 'Poppins', monospace, sans-serif;
+  cursor: pointer;
 }
 
-.name, .job-title{
+.name, .job-title, .website, .email, .tel{
   color: white;
-  font-size: 60px;
+  font-size: 4rem;
   margin: 5px 0px 0px 10px;
   padding: 0px;
 }
+.name {
+  text-decoration: underline;
+}
 
 .job-title {
-  font-size: 26px;
+  font-size: 2rem;
+  margin-top: 10px;;
+}
+
+.website, .email, .tel {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.website-link, .email-link {
+  text-decoration: none;
+  color: white;
+}
+.website-link:hover, .email-link:hover {
+  text-decoration: underline;
+  color: rgb(139, 1, 1);
 }
