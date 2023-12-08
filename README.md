@@ -1,5 +1,3 @@
-<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/TPlatts04/Animated-Business-Card"> <img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/t/TPlatts04/Animated-Business-Card">
-
 # Animated-Business-Card
 
 # Project Info
