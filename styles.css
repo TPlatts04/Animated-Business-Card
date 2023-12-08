@@ -49,3 +49,16 @@ body {
   text-decoration: underline;
   color: rgb(139, 1, 1);
 }
+
+.image-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  justify-content: space-evenly;
+  top: 2.5rem;
+}
+
+.instagram, .github, .code-wars, .leetcode {
+  position: relative;
+  width: 5rem;
+}
