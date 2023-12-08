@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(32, 32, 32);
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55rem;
+}
+
+.business-card {
+  width: 50rem;
+  height: 30rem;
+  border: 1px solid black;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.432);
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0), black);
+  border-radius: 25px;
+  font-family: 'Poppins', monospace, sans-serif;
+}
+
+.name {
+  color: white;
+  font-size: 60px;
+  margin: 5px 0px 0px 10px;
+  padding: 0px;
+}
