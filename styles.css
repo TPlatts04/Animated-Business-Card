@@ -3,22 +3,35 @@ body {
   margin: 0px;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 55rem;
+.hidden {
+  transform: rotateY(180deg);
 }
 
-.business-card {
+.container {
+  height: 30rem;
+  width: 50rem;
+  position: relative;
+  left: 35rem;
+  top: 12rem;
+}
+
+.card-whole {
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d; /* Properly flips item over, hiding front, showing back etc, treats it as a 3d object*/
+}
+
+.business-card-back, .business-card {
   width: 50rem;
   height: 30rem;
-  border: 1px solid black;
-  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.432);
+  position: absolute;
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0), black);
   border-radius: 25px;
+  border: 1px solid black;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.432);
   font-family: 'Poppins', monospace, sans-serif;
-  overflow: hidden;
+  backface-visibility: hidden; /* Hides the back face of card */
+  cursor: pointer;
 }
 
 .name, .job-title, .website, .email, .tel{
@@ -63,10 +76,47 @@ body {
   width: 5rem;
 }
 
-.corner {
-  width: 5rem;
-  margin-left: 47rem;
-  margin-top: 2.2rem;
-  border-radius: 15px;
-  cursor: pointer;
+.business-card-back {
+  transform: rotateY(180deg); /* Flip the info in this class to ensure when transition is applied it flips to become readable */
+}
+
+.business-card-back {
+  text-align: center;
+}
+
+.occupation-title-back {
+  color:rgba(83, 83, 241, 0.671);
+  text-decoration: underline;
+  font-size: 4rem;
+  margin: 5px 0px 0px 10px;
+  padding: 0px;
+  font-weight: 700;
+}
+
+.div-signature {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.sign {
+  position: absolute;
+  top: 25rem;
+  width: 50rem;
+  height: 2rem;
+  background-color: white;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.back-images {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.html5, .css3, .js {
+  width: 9rem;
+  position: relative;
+  top: 4rem;
 }
